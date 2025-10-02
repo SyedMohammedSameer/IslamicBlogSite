@@ -12,7 +12,7 @@
   <meta property="og:image" content="assets/images/work-meta.webp">
   <meta name="twitter:title" content="Work In Quran.">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="./assets/images/islamic-miracles.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/islamic-miracles-logo.svg" type="image/x-icon">
   <meta name="description" content="1400 years ago nobody knew about work however it was portrayed in the Quran.
 
 In physics, work against gravity is simply weight multiplied by displacement.">
@@ -58,6 +58,39 @@ body {top: 0 !important;}
   font-size: 12px !important;
   padding: 0 !important;
 }
+
+/* FORCE DARK MODE TRANSLATE TEXT - HIGH PRIORITY */
+body.dark-mode .goog-te-gadget,
+body.dark-mode .goog-te-gadget *,
+body.dark-mode .goog-te-gadget-simple,
+body.dark-mode .goog-te-gadget-simple *,
+body.dark-mode #google_translate_element,
+body.dark-mode #google_translate_element *,
+body.dark-mode #google_translate_element select,
+body.dark-mode #google_translate_element select option,
+body.dark-mode #google_translate_element span,
+body.dark-mode #google_translate_element div,
+body.dark-mode #google_translate_element font {
+  color: #e8eaed !important;
+  background-color: transparent !important;
+}
+
+body.dark-mode #google_translate_element select {
+  background-color: rgba(20, 25, 38, 0.9) !important;
+  border: 1px solid rgba(100, 191, 70, 0.3) !important;
+  padding: 4px 8px !important;
+}
+
+body.dark-mode .goog-te-gadget-icon {
+  background-image: none !important;
+  display: none !important;
+}
+
+body.dark-mode #google_translate_element a,
+body.dark-mode .goog-te-gadget a {
+  color: #64bf46 !important;
+}
+
 
 
 
@@ -189,6 +222,29 @@ body.dark-mode #google_translate_element {
   color: #e8eaed !important;
 }
 
+body.dark-mode #google_translate_element select {
+  background: rgba(20, 25, 38, 0.9) !important;
+  color: #e8eaed !important;
+  border: 1px solid rgba(100, 191, 70, 0.3) !important;
+}
+
+body.dark-mode #google_translate_element .goog-te-gadget {
+  color: #e8eaed !important;
+}
+
+body.dark-mode #google_translate_element .goog-te-gadget-simple {
+  color: #e8eaed !important;
+  background: transparent !important;
+}
+
+body.dark-mode #google_translate_element span {
+  color: #e8eaed !important;
+}
+
+body.dark-mode #google_translate_element a {
+  color: #64bf46 !important;
+}
+
 /* LIGHT MODE (Default) */
 body {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
@@ -277,13 +333,10 @@ body {
 }
 
 /* ===== FLOATING ANIMATION ===== */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
+/* Float animation removed */
 
 .navbar-logo {
-  animation: float 6s ease-in-out infinite;
+  /* Animation removed for stability */
 }
 
 /* ===== ENHANCED SCROLL TO TOP ===== */

@@ -13,7 +13,7 @@
   <meta property="og:image" content="assets/images/index-meta.gif">
   <meta name="twitter:title" content="Islamic Miracles.">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="./assets/images/islamic-miracles.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/islamic-miracles-logo.svg" type="image/x-icon">
   <meta name="description"
     content="The Quran contains scientific knowledge that could not have been known 1400 years ago. It ranges from basic arithmetics to the most advanced topics in astrophysics. You are invited to go through those miracles and judge for yourself.">
   <meta name="amp-script-src" content="">
@@ -124,6 +124,39 @@
       font-size: 12px !important;
       padding: 0 !important;
     }
+
+/* FORCE DARK MODE TRANSLATE TEXT - HIGH PRIORITY */
+body.dark-mode .goog-te-gadget,
+body.dark-mode .goog-te-gadget *,
+body.dark-mode .goog-te-gadget-simple,
+body.dark-mode .goog-te-gadget-simple *,
+body.dark-mode #google_translate_element,
+body.dark-mode #google_translate_element *,
+body.dark-mode #google_translate_element select,
+body.dark-mode #google_translate_element select option,
+body.dark-mode #google_translate_element span,
+body.dark-mode #google_translate_element div,
+body.dark-mode #google_translate_element font {
+  color: #e8eaed !important;
+  background-color: transparent !important;
+}
+
+body.dark-mode #google_translate_element select {
+  background-color: rgba(20, 25, 38, 0.9) !important;
+  border: 1px solid rgba(100, 191, 70, 0.3) !important;
+  padding: 4px 8px !important;
+}
+
+body.dark-mode .goog-te-gadget-icon {
+  background-image: none !important;
+  display: none !important;
+}
+
+body.dark-mode #google_translate_element a,
+body.dark-mode .goog-te-gadget a {
+  color: #64bf46 !important;
+}
+
 
 
 
@@ -338,12 +371,7 @@
     }
 
     /* ===== FLOATING ANIMATION ===== */
-    @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0px);
-      }
+    /* keyframes removed */
 
       50% {
         transform: translateY(-20px);
@@ -351,7 +379,7 @@
     }
 
     .navbar-logo {
-      animation: float 6s ease-in-out infinite;
+      /* animation removed */
     }
 
     /* ===== ENHANCED SCROLL TO TOP ===== */
